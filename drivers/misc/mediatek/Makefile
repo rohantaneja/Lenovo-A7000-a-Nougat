@@ -29,7 +29,7 @@ ifneq ($(CONFIG_MTK_GIC),y)
 obj-y   += irq/
 endif
 
-obj-$(CONFIG_MTK_CPU_STRESS)	+= cpu_stress/
+#obj-$(CONFIG_MTK_CPU_STRESS)	+= cpu_stress/
 obj-$(CONFIG_MTK_LASTPC)	    += lastpc/
 obj-$(CONFIG_MTK_DBG_DUMP) += dbg_dump/
 
@@ -164,16 +164,16 @@ obj-$(CONFIG_MTK_NFC) += nfc/
 obj-$(CONFIG_ZRAM)	+= mlog/
 
 #lenovo-sw zhangjiano add for sisley2 camera otp begin
-obj-$(CONFIG_MTK_CAM_CAL_S5K3M2OTP_SUPPORT)	+= cam_cal/src/$(MTK_PLATFORM)/s5k3m2_otp/
+obj-$(CONFIG_MTK_CAM_CAL_S5K3M2OTP_SUPPORT)	+= cam_cal/src/mt6752/s5k3m2_otp/
 #lenovo-sw zhangjiano add for sisley2 camera otp end
 #zhangjiano add for sisley2 stereo camera begin
-obj-$(CONFIG_MTK_CAM_CAL_GT24C08_SUPPORT)	+= cam_cal/src/$(MTK_PLATFORM)/GT24c08_eeprom/
-obj-$(CONFIG_MTK_CAM_CAL_GT24C08H_SUPPORT)	+= cam_cal/src/$(MTK_PLATFORM)/GT24c08h_eeprom/
+obj-$(CONFIG_MTK_CAM_CAL_GT24C08_SUPPORT)	+= cam_cal/src/mt6752/GT24c08_eeprom/
+obj-$(CONFIG_MTK_CAM_CAL_GT24C08H_SUPPORT)	+= cam_cal/src/mt6752/GT24c08h_eeprom/
 #zhangjiano add for sisley2 stereo end
-obj-$(CONFIG_MTK_CAM_CAL_IMX219OFILM_SUPPORT) += cam_cal/src/$(MTK_PLATFORM)/imx219ofilm_eeprom/
-obj-$(CONFIG_MTK_CAM_CAL_HI551QTECHV2_SUPPORT) += cam_cal/src/$(MTK_PLATFORM)/hi551qtechv2_eeprom/
+obj-$(CONFIG_MTK_CAM_CAL_IMX219OFILM_SUPPORT) += cam_cal/src/mt6752/imx219ofilm_eeprom/
+obj-$(CONFIG_MTK_CAM_CAL_HI551QTECHV2_SUPPORT) += cam_cal/src/mt6752/hi551qtechv2_eeprom/
 #lenovo.sw START wangsx3 add for AIO
-obj-$(CONFIG_MTK_CAM_CAL_OV13850SUNNY_SUPPORT) += cam_cal/src/$(MTK_PLATFORM)/ov13850sunny_eeprom/
+obj-$(CONFIG_MTK_CAM_CAL_OV13850SUNNY_SUPPORT) += cam_cal/src/mt6752/ov13850sunny_eeprom/
 #lenovo.sw END wangsx3 add for AIO
 
 obj-y	+= lens/
