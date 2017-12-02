@@ -216,6 +216,9 @@ obj-y	+= keypad/
 obj-$(CONFIG_MTK_DUM_CHAR)	+= dum-char/
 obj-$(CONFIG_MTK_SYSENV)	+= sysenv/
 
+obj-$(CONFIG_MTK_DYNAMIC_BOOST) += dynamic_boost/
+
+
 ifdef CONFIG_CUSTOM_KERNEL_SSW
 ifneq ($(strip $(CONFIG_CUSTOM_KERNEL_SSW)),"")
 obj-y	+= ssw/

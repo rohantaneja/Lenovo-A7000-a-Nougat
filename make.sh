@@ -1,5 +1,5 @@
  #
- # Copyright © 2017, Aryan Kedare
+ # Copyright © 2017, Rohan Taneja
  #
  # This software is licensed under the terms of the GNU General Public
  # License version 2, as published by the Free Software Foundation, and
@@ -13,8 +13,8 @@
  
 #!/bin/bash
 
-# tested tc: /home/aryankedare/toolchains/aarch64-linux-android-6.0/bin
-# tested tc: /home/aryankedare/toolchains/aarch64-linux-android-5.3/bin
+# tested tc: /home/toolchains/aarch64-linux-android-6.0/bin
+# tested tc: /home/toolchains/aarch64-linux-android-5.3/bin
 # tested tc (best alternative): /home/toolchains/aarch64-linux-android-4.9/bin
 
 KERNEL_DIR=$PWD

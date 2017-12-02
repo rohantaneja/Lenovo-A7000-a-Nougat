@@ -5,7 +5,7 @@ Basic   | Spec Sheet
 CPU     | 1.5GHz 64-bit Octa-Core MT6752
 GPU     | Mali-T760MP2
 Memory  | 2GB RAM
-Android Version | 7.1.1
+Shipped Android Version | 5.0
 Storage | 8GB
 Display | 5.5" IPS 1280 x 720 px
 Camera  | 8MPx, LED Flash
@@ -20,7 +20,7 @@ Camera  | 8MPx, LED Flash
 
         $ export ARCH=arm64
 
-        $ make a7000_defconfig ARCH=arm64 CROSS_COMPILE=aarch64-linux-android-
+        $ make daredevil_defconfig ARCH=arm64 CROSS_COMPILE=aarch64-linux-android-
 
         $ make ARCH=arm64 CROSS_COMPILE=aarch64-linux-android-
         
