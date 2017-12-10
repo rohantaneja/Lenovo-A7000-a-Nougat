@@ -52,6 +52,10 @@
 #include <mach/diso.h>
 #endif
 
+#ifdef CONFIG_FORCE_FAST_CHARGE
+#include <linux/fastcharge.h>
+#endif
+
  /* ============================================================ // */
  /* define */
  /* ============================================================ // */

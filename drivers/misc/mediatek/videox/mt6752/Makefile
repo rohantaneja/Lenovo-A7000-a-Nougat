@@ -27,6 +27,9 @@ ccflags-y += -I$(srctree)/drivers/misc/mediatek/video/     \
              -I$(srctree)/drivers/misc/mediatek/ext_disp/$(MTK_PLATFORM) \
              -I$(srctree)/drivers/misc/mediatek/mach/$(MTK_PLATFORM)/include/mach/
 
+obj-$(CONFIG_MTK_KCAL_CTRL) += mtk_kcal_ctrl.o
+
+
 ccflags-y += -I$(srctree)/drivers/staging/android/ion
 
 ifeq ($(CONFIG_MTK_INTERNAL_HDMI_SUPPORT), y)
